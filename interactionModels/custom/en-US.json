@@ -1,0 +1,210 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "day",
+              "elicitationRequired": true,
+              "type": "AMAZON.Ordinal",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1590072668181.312633388369"
+              }
+            },
+            {
+              "name": "month",
+              "elicitationRequired": true,
+              "type": "AMAZON.Month",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1590072668181.197292346752"
+              }
+            },
+            {
+              "name": "year",
+              "elicitationRequired": true,
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1590072668181.683499038370"
+              }
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "day",
+              "type": "AMAZON.Ordinal"
+            },
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "month",
+              "type": "AMAZON.Month"
+            },
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "samples": [
+            "My birthday is on {day} {month} {year}",
+            "I was born {month} {day} {year}",
+            "My birthday is on {month} {day} {year}",
+            "I was born on {day} {month} {year}",
+            "my month is {month}",
+            "my date is {day}",
+            "my year is {year}",
+            "my date of birth is {year} {day} {month}",
+            "my date of birth is {month} {day} {year}",
+            "my date of birth is {day} {year} {month}",
+            "my date of birth is {year} {month} {day}",
+            "my date of birth is {month} {year} {day}",
+            "my date of birth is {day} {month} {year}",
+            "{month} {year} {day}",
+            "{year} {month} {day}",
+            "{day} {year} {month}",
+            "{day} {month} {year}",
+            "{year} {day} {month}",
+            "{month} {day} {year}",
+            "can you tell me what is my sign {year} {month} {day}",
+            "can you tell me what is my sign {day} {year} {month}",
+            "can you tell me what is my sign {day} {month} {year}",
+            "what is my zodiac sign with {day} {month} {year}",
+            "what is my zodiac sign with {month} {year} {day}",
+            "{day} ",
+            "born in {month} {year} {day}",
+            "born in {year} {day} {month}",
+            "born in {day} {month} {year}",
+            "{year}",
+            "{month}",
+            "I was born on November Nineteen {year}",
+            "I was born on November {day} Ninteen Ninty Eight",
+            "I was born on {month} Nineteen Ninteen Ninty Eight",
+            "I was born on November Nineteen Ninteen Ninty Eight",
+            "My birthday is on {month} {day} {year}  What is my zodiac sign",
+            "What zodiac sign is for {month} {day} {year}",
+            "Tell me the zodiac sign for {month} {day} {year}",
+            "If I was born on {month} {day} {year}   what is my zodiac",
+            "What is the star sign for {month} {day} {year}",
+            "I was born on {month} {day} {year}   what is my zodiac sign",
+            "Can you tell me my zodiac sign for {month} {day} {year}",
+            "If my birthday is {month} {day} {year}  what zodiac am I",
+            "I’d like to know the zodiac sign for {month} {day} {year}",
+            "Find my zodiac sign for {month} {day} {year}",
+            "Zodiac sign for {month} {day} {year}",
+            "what is the zodiac for {month} {day} {year}",
+            "Star sign for {month} {day} {year}",
+            "Tell me the sign for {month} {day} {year}",
+            "what is my sign for {month} {day} {year}",
+            "I was born on {month} {day} {year}  What sign is that",
+            "Which star sign is for {month} {day} {year}",
+            "Give me my zodiac for {month} {day} {year}",
+            "Find the star sign for {month} {day} {year}",
+            "what is the astrological sign for {month} {day} {year}",
+            "If I say my birthday is {month} {day} {year}   what is my sign",
+            "what is the zodiac for someone born on {month} {day} {year}",
+            "If I’m born on {month} {day} {year}   what is my zodiac",
+            "Which zodiac sign matches {month} {day} {year}",
+            "Tell me the zodiac sign for {month} {day} {year}",
+            "Can you tell me my star sign for {month} {day} {year}",
+            "Do you know the zodiac sign for {month} {day} {year}",
+            "What sign is someone born on {month} {day} {year}",
+            "Can you find the zodiac for {month} {day} {year}",
+            "what is the astrological sign for a person born on {month} {day} {year}",
+            "My birthday is {month} {day} {year}   what is my sign",
+            "What zodiac sign would I have if I was born on {month} {day} {year}",
+            "Tell me the star sign for my birthday {month} {day} {year}",
+            "Can you figure out my zodiac if I was born on {month} {day} {year}",
+            "what is my zodiac if my birthday is {month} {day} {year}",
+            "I was born on {month} {day} {year}  Is that zodiac",
+            "Can you confirm the zodiac sign for {month} {day} {year}",
+            "Would {month} {day} {year} fall under zodiac",
+            "What zodiac sign applies to {month} {day} {year}",
+            "Check my zodiac for {month} {day} {year}",
+            "Based on {month} {day} {year}   what is my star sign",
+            "Find out my zodiac for {month} {day} {year}",
+            "What zodiac matches my birthday on {month} {day} {year}",
+            "Can you calculate my zodiac for {month} {day} {year}",
+            "I’d love to know my sign for {month} {day} {year}",
+            "Zodiac on {month} {day} {year}",
+            "Sign for {month} {day} {year}",
+            "Tell me zodiac for {month} {day} {year}",
+            "Astrological sign for {month} {day} {year}",
+            "Star sign of {month} {day} {year}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "get hackathon project"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what day you were born"
+          }
+        ],
+        "id": "Elicit.Slot.1590072668181.312633388369"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what month you were born"
+          }
+        ],
+        "id": "Elicit.Slot.1590072668181.197292346752"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what year you were born"
+          }
+        ],
+        "id": "Elicit.Slot.1590072668181.683499038370"
+      }
+    ]
+  }
+}
